@@ -1,0 +1,3 @@
+Shaan, Math:90, Science:66, English:58, History:73, Computer:92
+Rehaan, Math:40, Science:74, English:78, History:58, Computer:67
+Smita, Math:58, Science:69, English:94, History:61, Computer:81

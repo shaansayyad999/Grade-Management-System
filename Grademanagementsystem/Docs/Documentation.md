@@ -1,41 +1,52 @@
-Grade Management System – Project Documentation
-1. Project Overview
+# Grade Management System – Project Documentation
 
-The Grade Management System is a console-based Java application created to handle and evaluate student academic performance in a structured way.
+---
 
-This application enables users to enter marks for different subjects, calculate the average score, assign grades, and generate reports like top-performing students and overall grade distribution.
+## 1. Project Overview
 
-The project mainly focuses on applying core Java concepts such as arrays, control structures, and object-oriented programming. It was developed as part of the Developer’s Arena Internship Program.
+The Grade Management System is a console-based Java application developed to manage and analyze student academic performance.
 
-Objectives
-Develop a menu-driven Java program
-Store and manage student data using arrays and ArrayList
-Compute average marks and assign grades accordingly
-Generate useful performance reports
-Handle user input with proper validation
-2. Setup Instructions
+This system allows users to input marks for multiple subjects, calculate averages, assign grades, and generate performance reports such as top performers and grade distribution.
 
-Follow the steps below to run the application:
+The project demonstrates the use of arrays, control flow statements, and object-oriented programming concepts. It was developed as part of the Developer's Arena Internship Program.
 
-Step 1: Open terminal and go to the project folder
+### Objectives
 
-Step 2: Navigate to the source directory
+* Implement a menu-driven Java application
+* Store and manage student data using arrays and ArrayList
+* Calculate averages and assign grades
+* Generate performance reports
+* Apply input handling and validation
+
+---
+
+## 2. Setup Instructions
+
+Follow these steps to run the project:
+
+### Step 1: Open Terminal
+
+Navigate to the project directory.
+
+### Step 2: Go to Source Folder
 
 cd GradeManagementSystem/src
 
-Step 3: Compile all Java files
+### Step 3: Compile the Program
 
 javac *.java
 
-Step 4: Execute the program
+### Step 4: Run the Application
 
 java GradeManagementSystem
 
-After running, a menu will be displayed for interaction.
+The program will display a menu for user interaction.
 
-3. Code Structure
+---
 
-The project is divided into multiple classes to keep the code organized and maintainable.
+## 3. Code Structure
+
+The project is organized into multiple classes for better modularity and readability.
 
 GradeManagementSystem
 │
@@ -53,111 +64,128 @@ GradeManagementSystem
 │   └── sample_data.txt
 │
 └── screenshots
-File Descriptions
 
-GradeManagementSystem.java
-Acts as the main class and controls menu operations and user interaction.
+### File Descriptions
 
-StudentGrade.java
-Stores student details like name and marks, and also handles average calculation.
+**GradeManagementSystem.java**
+Main class that handles the menu system and user interaction.
 
-GradeCalculator.java
-Responsible for assigning grades based on the calculated average.
+**StudentGrade.java**
+Represents student data including name and subject marks, and calculates average.
 
-ReportGenerator.java
-Used to generate reports such as subject averages, topper list, and grade distribution.
+**GradeCalculator.java**
+Contains logic for assigning grades based on average marks.
 
-4. Visual Documentation
+**ReportGenerator.java**
+Generates performance reports including subject averages, top performers, and grade distribution.
 
-The screenshots folder contains images showing:
+---
 
-Menu interface
-Adding student details
-Displaying student records
-Calculating averages
-Generating reports
+## 4. Visual Documentation
 
-These screenshots confirm that the application is working correctly.
+Screenshots are included in the **screenshots folder** to demonstrate:
 
-5. Technical Details
-Programming Language
+* Menu interface
+* Adding student marks
+* Viewing student records
+* Calculating averages
+* Generating reports
+
+These screenshots confirm the correct working of the application.
+
+---
+
+## 5. Technical Details
+
+### Programming Language
 
 Java
 
-Concepts Used
-Arrays (1D and 2D)
-ArrayList for flexible data storage
-Loops (for, while)
-Conditional statements (if-else, switch-case)
-Object-Oriented Programming (classes, methods)
-Scanner class for input handling
-Data Structures
-double[][] array → stores subject-wise marks
-ArrayList → stores student records dynamically
-Algorithms Implemented
+### Concepts Used
 
-Add Student
+* Arrays (1D and 2D)
+* ArrayList for dynamic storage
+* Loops (for, while)
+* Conditional statements (if-else, switch)
+* Object-Oriented Programming (classes and methods)
+* Scanner for user input
 
-Take student name and subject marks as input
-Store marks in arrays
-Add student object to list
+### Data Structures
 
-Calculate Average
+* **Array (double[][])** → used to store subject marks
+* **ArrayList<StudentGrade>** → used to store student records
 
-Add all subject marks
-Divide by total number of subjects
+### Algorithms Implemented
 
-Generate Report
+**Add Student**
 
-Compute subject-wise averages
-Sort students based on performance
-Display top performers
-Show grade distribution count
-6. Grading System Explanation
+1. Accept student name and marks
+2. Store data in arrays
+3. Add to student list
+
+**Calculate Average**
+
+1. Sum all subject marks
+2. Divide by number of subjects
+
+**Generate Report**
+
+1. Calculate subject averages
+2. Sort students by performance
+3. Display top performers
+4. Count grade distribution
+
+---
+
+## 6. Grading System Explanation
 
 Grades are assigned based on average marks:
 
-Average Marks	Grade
-90 and above	A+
-80 - 89	A
-70 - 79	B
-60 - 69	C
-50 - 59	D
-Below 50	F
+| Average Marks | Grade |
+| ------------- | ----- |
+| 90 and above  | A+    |
+| 80 - 89       | A     |
+| 70 - 79       | B     |
+| 60 - 69       | C     |
+| 50 - 59       | D     |
+| Below 50      | F     |
 
-This logic is implemented in GradeCalculator.java.
+This grading logic is implemented in **GradeCalculator.java**.
 
-7. Testing Evidence
+---
 
-The system was tested using sample data stored in:
+## 7. Testing Evidence
+
+The system was tested using sample student data stored in:
 
 examples/sample_data.txt
-Sample Data
+
+### Sample Data
+
 Name, Math, Science, English, History, Computer
-Manu, 86, 56, 48, 23, 18
+manu, 86, 56, 48, 23, 18
 Rahul, 96, 89, 88, 78, 87
-Sneha, 78, 65, 84, 81, 91
-Test Cases Performed
-Test Case	Description	Expected Result
-Add Student	Enter marks for 5 subjects	Student added successfully
-View Students	Display all students	Correct data displayed
-Calculate Avg	Compute average marks	Correct average and grade output
-Generate Report	Display report	Shows averages, toppers, grades
+sneha, 78, 65, 84, 81, 91
 
-These test cases confirm that the system performs as expected.
+### Test Cases Performed
 
-8. Conclusion
+| Test Case         | Description                | Expected Result                                 |
+| ----------------- | -------------------------- | ----------------------------------------------- |
+| Add Student       | Enter marks for 5 subjects | Student added successfully                      |
+| View Students     | Display all students       | Correct student data shown                      |
+| Calculate Average | Compute average marks      | Correct average and grade                       |
+| Generate Report   | Show report                | Displays averages, top performers, distribution |
 
-The Grade Management System effectively demonstrates the use of Java basics such as arrays, control flow, and object-oriented programming concepts.
+These tests confirm the system works correctly.
 
-It also builds a strong base for developing more advanced applications related to data handling and reporting.
+---
 
-How I Met Technical Requirements
+## 8. Conclusion
 
-This project satisfies the technical requirements by using arrays and ArrayList to manage student data and subject marks efficiently.
+The Grade Management System successfully demonstrates the use of Java fundamentals including arrays, control flow, and object-oriented programming.
 
-A menu-driven approach is implemented using loops and switch-case statements for smooth user interaction. The project structure is divided into multiple classes, where each class is responsible for a specific task like storing student data, calculating grades, or generating reports.
+The project provides a strong foundation for building more advanced data management and reporting systems.
 
-The system calculates averages, assigns grades using conditional logic, and generates reports such as top performers and grade distribution.
 
-The application was tested with different sets of inputs to ensure accuracy and proper functionality.
+How i face technical requirements :
+This project meets the technical requirements by using arrays and ArrayList to store student data and marks for multiple subjects. A menu-driven system is implemented using loops and switch-case for user interaction. Separate classes are used for better structure, where student data, grade calculation, and report generation are handled independently. The system calculates averages, assigns grades based on defined conditions, and generates reports including top performers and grade distribution. The program was tested with multiple student inputs to ensure correct functionality.

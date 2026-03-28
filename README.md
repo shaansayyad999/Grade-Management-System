@@ -106,5 +106,5 @@ Screenshots demonstrating the functionality of the system are included in the sc
 
 ## Author
 
-Shaan Nazim Sayyad
+Shaan Sayyad -
 Developer's Arena Internship

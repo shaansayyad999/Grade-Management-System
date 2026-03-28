@@ -86,10 +86,9 @@ examples/sample_data.txt
 
 Example:
 
-Name, Math, Science, English, History, Computer
-manu, 86, 56, 48, 23, 18
-Rahul, 96, 89, 88, 78, 87
-sneha, 78, 65, 84, 81, 91
+Shaan, Math:90, Science:66, English:58, History:73, Computer:92
+Rehaan, Math:40, Science:74, English:78, History:58, Computer:67
+Smita, Math:58, Science:69, English:94, History:61, Computer:81
 
 ---
 
